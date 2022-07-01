@@ -10,7 +10,8 @@ int main(void)
 {
 	int i;
 	int n;
-	int j;	
+	int j;
+	
 	for (i = 48; i < 58; i++)
 	{
 		for (n = 48; n < 58; n++)
@@ -20,7 +21,7 @@ int main(void)
 				for (j = 48; j < 58; j++)
 				{
 					if (j > n)
-					{ 
+					{
 						putchar(i);
 						putchar(n);
 						putchar(j);
