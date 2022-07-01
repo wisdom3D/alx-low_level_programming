@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int  numbr ;
+	int  numbr;
 
 	for (numbr = 0 ; numbr < 10 ; numbr++)
 		printf("%d", numbr);
