@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print combinations of two digit numbers
+ * main - Print combinations of two digit numbers
  *
  * Return: Always 0 (Success)
  */
@@ -19,10 +19,11 @@ int main(void)
 			if (tens < 8)
 			{
 				putchar(',');
-		 		putchar(' ');
-		        }
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
