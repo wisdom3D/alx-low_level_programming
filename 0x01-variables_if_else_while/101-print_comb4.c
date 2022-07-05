@@ -1,8 +1,7 @@
 #include <stdio.h>
-
 /**
  * main - program that prints all possible different combinations
- * of thresss digits.
+ * of thress digits.
  *
  * Return: 0
  */
@@ -22,16 +21,16 @@ int main(void)
 				{
 					if (j > n)
 					{
-						putchar(i);
-						putchar(n);
-						putchar(j);
-						if (i == 55 && n == 56 && j == 57)
-						{
-							break;
-						}
+					putchar(i);
+					putchar(n);
+					putchar(j);
+					if (i == 55 && n == 56 && j == 57)
+					{
+						break;
+					}
 
-						putchar(',');
-						putchar(' ');
+					putchar(',');
+					putchar(' ');
 					}
 				}
 			}
