@@ -4,18 +4,18 @@
  *
  * Return: 0 (Success)
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
-	char lettre = 'a';
-	int nbre = 0;
-	while (nbre < 10)
-	{
-		while (lettre <= 'z')
-		{
-			_putchar(lettre);
-			lettre++;
-		}
-		_putchar('\n');
-		nbre++;
-	}
+int b = 0;
+while (b < 10)
+{
+char a = 'a';
+while (a <= 'z')
+{
+_putchar(a);
+a++;
+}
+_putchar('\n');
+b++;
+}
 }

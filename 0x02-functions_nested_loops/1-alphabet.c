@@ -1,19 +1,21 @@
 #include "main.h"
-/**
- * print_alphabet - fonction that prints the alphabet in lowercase followed
- * by new line
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	char lettre = 'a';
 
-	while(lettre <= 'z')
+/**
+ * print_alphabet - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+
+void print_alphabet(void)
+{
+	char alp = 'a';
+
+	while (alp <= 'z')
 	{
-		_putchar(lettre);
-		lettre++;
+		_putchar (alp);
+		alp++;
+
 	}
-	_putchar('\n');
-	return (0);
+	_putchar ('\n');
+
 }
