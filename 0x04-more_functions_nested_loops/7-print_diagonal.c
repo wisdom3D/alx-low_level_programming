@@ -3,8 +3,8 @@
 
 /**
  * print_diagonal - Print diagonal line dependent on the integer n.
- * @ : The number of lines using '\' characters to use
- * Return: void.
+ * @n : The number of lines using '\' characters to use
+ * Return: Void.
  */
 void print_diagonal(int n)
 {
@@ -15,11 +15,12 @@ void print_diagonal(int n)
 	{
 		for (spaces = 0; spaces < i; spaces++)
 		{
-			_putchar('');
+			_putchar(' ');
 		}
 		_putchar('\\');
-		_putchar('\\');
+		_putchar('\n');
 	}
+
 	if (n <= 0)
 	{
 		_putchar('\n');
