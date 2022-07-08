@@ -2,23 +2,25 @@
 #include <stdio.h>
 
 /**
- *print_square - Print square line dependent on the integer n.
- *n : The number of lines using '#' characters to use per riw and column
- * Return: void.
+ * print_diagonal - Print diagonal line dependent on the integer n.
+ * @n : The number of lines using '\' characters to use
+ * Return: Void.
  */
-void print_square(int n)
+void print_diagonal(int n)
 {
-	int x;
-	int y;
+	int i;
+	int spaces;
 
-	for (y = 0; y < n; y++)
+	for (i = 0; i < n; i++)
 	{
-		for (x = 0; x < n; x++)
+		for (spaces = 0; spaces < i; spaces++)
 		{
-			_putchar('#');
+			_putchar(' ');
 		}
-		_putchar('\');
+		_putchar('\\');
+		_putchar('\n');
 	}
+
 	if (n <= 0)
 	{
 		_putchar('\n');
