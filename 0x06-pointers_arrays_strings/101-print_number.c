@@ -2,10 +2,10 @@
 
 /**
  * print_number - print integers
- * @n: integer value
+ * @n: integer value.
+ *
  * Return: nothing
  */
-
 void print_number(int n)
 {
 	unsigned int a, b, count, tmp, pow;
@@ -27,7 +27,7 @@ void print_number(int n)
 		tmp /= 10;
 	}
 
-	for ( count = 1; count < b; count++)
+	for (count = 1; count < b; count++)
 		pow *= 10;
 
 	while (pow > 1)
