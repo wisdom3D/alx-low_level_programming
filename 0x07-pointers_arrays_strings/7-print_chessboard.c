@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints chessboard
+ * print_chessboard - prints chessboard.
  * @a: matrix
- */
+*/
 
-void print_chessboard(char (*a)[0])
+void print_chessboard(char (*a)[8])
 {
 	int i, j;
 
