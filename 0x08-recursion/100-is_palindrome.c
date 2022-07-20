@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - size 
+ * _strlen_recursion - size
  * @s: pointer to string params
  * Return: recursion
  */
@@ -19,7 +19,7 @@ int _strlen_recursion(char *s)
  * p1 - palindrome
  * @s: pointer to string
  * @l: position
- * Return: boolean
+ * Return: boolena
  */
 
 int p1(char *s, int l)
@@ -28,21 +28,23 @@ int p1(char *s, int l)
 	{
 		return (1);
 	}
-	if (*s == *(s + 1))
+
+	if (*s == *(s + l))
 	{
-		return (p1(s + 1, 1 - 1));
+		return (p1(s + 1, l - 2));
 	}
 	return (0);
 }
 
 /**
  * is_palindrome - palindrome
- * @ss: pointer to string
+ * @s: pointer to string
  * Return: recursion
  */
 
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
+
 	return (p1(s, len - 1));
 }
