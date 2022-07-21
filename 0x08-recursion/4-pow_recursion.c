@@ -3,9 +3,10 @@
 /**
  * _pow_recursion - pow recursion
  * @x: integer params
- * @y: integer params
+ * @y: integer paramtr
  * Return: recursion
  */
+
 
 int _pow_recursion(int x, int y)
 {
@@ -17,5 +18,5 @@ int _pow_recursion(int x, int y)
 	{
 		return (1);
 	}
-	return (x * _pow_recursion(x, y -1));
+	return (x * _pow_recursion(x, y - 1));
 }
